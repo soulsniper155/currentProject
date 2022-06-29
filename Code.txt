@@ -521,7 +521,7 @@ contract DividendDistributor is IDividendDistributor {
     }
 }
 
-contract Egg is IBEP20, Auth {
+contract TrustShades is IBEP20, Auth {
     using SafeMath for uint256;
 
     uint256 public constant MASK = type(uint128).max;
@@ -533,8 +533,8 @@ contract Egg is IBEP20, Auth {
         0x000000000000000000000000000000000000dEaD;
     address constant _dexRouter = 0x9Ac64Cc6e4415144C455BD8E4837Fea55603e5c3;
 
-    string constant _name = "Egg";
-    string constant _symbol = "EGG";
+    string constant _name = "Trust Shades";
+    string constant _symbol = "TRUST";
     uint8 constant _decimals = 9;
 
     uint256 _totalSupply = 1_000_000_000 * (10**_decimals);
